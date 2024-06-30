@@ -1,0 +1,91 @@
+/* src/app/styles/Calculator.module.css */
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input, .result {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 3px 3px 5px #bababa, -3px -3px 5px #ffffff;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+}
+
+.button:active {
+    background: linear-gradient(145deg, #d0d0d0, #e8e8e8);
+    transform: scale(0.98);
+    box-shadow: inset 3px 3px 5px #bababa, inset -3px -3px 5px #ffffff;
+}
+
+.clearButton {
+    background-color: #ff4d4d;
+    color: #fff;
+    background: linear-gradient(145deg, #ff6b6b, #ff3333);
+    box-shadow: 3px 3px 5px #d94747, -3px -3px 5px #ff7171;
+}
+
+.clearButton:hover {
+    background: linear-gradient(145deg, #ff5c5c, #ff2323);
+}
+
+.clearButton:active {
+    background: linear-gradient(145deg, #ff2323, #ff5c5c);
+    box-shadow: inset 3px 3px 5px #d94747, inset -3px -3px 5px #ff7171;
+}
+
+.equalsButton {
+    background-color: #4caf50;
+    color: #fff;
+    background: linear-gradient(145deg, #66bb6a, #388e3c);
+    box-shadow: 3px 3px 5px #33873b, -3px -3px 5px #69c76c;
+}
+
+.equalsButton:hover {
+    background: linear-gradient(145deg, #5aa65b, #2e7d32);
+}
+
+.equalsButton:active {
+    background: linear-gradient(145deg, #2e7d32, #5aa65b);
+    box-shadow: inset 3px 3px 5px #33873b, inset -3px -3px 5px #69c76c;
+}
